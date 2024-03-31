@@ -8,15 +8,11 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "ES2022",
-      "dom"
-    ],
+    "lib": ["ES2022", "dom"],
     "skipLibCheck": true,
     "paths": {
-      "@verivox/store": [
-        "modules/store/src/index.ts"
-      ]
+      "@verivox/services": ["modules/services/src/index.ts"],
+      "@verivox/store": ["modules/store/src/index.ts"]
     },
     "baseUrl": "."
   }
