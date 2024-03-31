@@ -1,6 +1,7 @@
 .tariff-container {
   display: flex;
   padding: 0px;
+  min-height: 100px;
 }
 
 .tariff-container:not(:last-child) {
@@ -13,7 +14,7 @@
 
 .index,
 .content-area {
-  border: 1px solid gray;
+  border: 2px solid black;
 }
 
 .content-area {
@@ -24,9 +25,11 @@
 }
 
 .index {
-  padding: 20px 0 20px 0;
+  padding: 0 5px 0 5px;
   display: flex;
   align-items: center;
+  border-right: none;
+  font-size: 12px;
 }
 
 .small-title {
@@ -42,8 +45,27 @@ tablet-screen {
 @media only screen and (max-width: 600px) {
 
   .upload-area,
-  .download-title {
+  .download-title,
+  .button-text {
     display: none;
+  }
+
+  .price-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .go-button {
+    padding: 0px !important;
+    margin-right: 5px;
+
+    .icon {
+      padding: 0px !important;
+    }
+  }
+
+  .content-area {
+    padding: 5px 0 5px 0 !important;
   }
 }
 
@@ -54,6 +76,14 @@ tablet-screen {
 
   .icon {
     padding: 0 5px 0 5px !important;
+  }
+
+  .content-area {
+    border-left: none !important;
+  }
+
+  .index {
+    align-items: flex-start;
   }
 
   .speed-title,
@@ -67,18 +97,21 @@ tablet-screen {
   }
 }
 
+.icon {
+  display: flex;
+  align-items: center;
+}
+
 .speed-info {
   display: flex;
 
   .icon {
-    display: flex;
-    align-items: center;
-    border: 2px solid gray;
+    border: 2px solid black;
     padding: 0 20px 0 20px;
   }
 
   .speed-title {
-    border: 1px solid gray;
+    border: 1px solid black;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 40%;
     padding: 0 5px 0 5px;
@@ -89,9 +122,22 @@ tablet-screen {
 }
 
 .go-button {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
   display: flex;
-  margin-left: 20px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+  transition-duration: 0.4s;
 }
+
+button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 
 .button-icon {
   display: flex;
