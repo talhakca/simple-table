@@ -12,6 +12,7 @@
     "skipLibCheck": true,
     "paths": {
       "@verivox/services": ["modules/services/src/index.ts"],
+      "@verivox/shared": ["modules/shared/src/index.ts"],
       "@verivox/store": ["modules/store/src/index.ts"]
     },
     "baseUrl": "."

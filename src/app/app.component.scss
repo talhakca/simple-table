@@ -1,0 +1,99 @@
+.tariff-container {
+  display: flex;
+  padding: 0px;
+}
+
+.tariff-container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.index,
+.content-area {
+  border: 1px solid gray;
+}
+
+.content-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.index {
+  padding: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.small-title {
+  font-size: 10px;
+}
+
+tablet-screen {
+  .benefits {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .upload-area,
+  .download-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .benefits {
+    display: none;
+  }
+
+  .icon {
+    padding: 0 5px 0 5px !important;
+  }
+
+  .speed-title,
+  .icon {
+    border: none !important;
+  }
+
+  .download-title,
+  .upload-title {
+    display: none;
+  }
+}
+
+.speed-info {
+  display: flex;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 0 20px 0 20px;
+  }
+
+  .speed-title {
+    border: 1px solid gray;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 0 5px 0 5px;
+    border-left: 0px;
+    width: 70px;
+    font-size: 12px;
+  }
+}
+
+.go-button {
+  display: flex;
+  margin-left: 20px;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+}

@@ -1,1 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
+div {
+  box-sizing: border-box;
+}
+
+section {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+ul {
+  list-style: unset;
+}
+
+
+.price::after {
+  content: "€"
+}
