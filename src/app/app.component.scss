@@ -64,6 +64,11 @@ tablet-screen {
     }
   }
 
+  .speed-title,
+  .icon {
+    border: none !important;
+  }
+
   .content-area {
     padding: 5px 0 5px 0 !important;
   }
@@ -86,10 +91,7 @@ tablet-screen {
     align-items: flex-start;
   }
 
-  .speed-title,
-  .icon {
-    border: none !important;
-  }
+
 
   .download-title,
   .upload-title {
