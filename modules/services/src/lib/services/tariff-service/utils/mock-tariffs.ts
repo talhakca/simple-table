@@ -27,7 +27,7 @@ export const mockTariffs = [
     name: 'Tariff 3',
     downloadSpeed: 12,
     uploadSpeed: 6,
-    price: 123.45,
+    price: 130,
     benefits: [
       'Benefit 1',
       'Benefit 2',
