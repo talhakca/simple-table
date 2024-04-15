@@ -1,0 +1,166 @@
+.tariff-container {
+  display: flex;
+  padding: 0px;
+  min-height: 100px;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.tariff-container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.index,
+.content-area {
+  border: 2px solid black;
+}
+
+.content-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.index {
+  padding: 0 5px 0 5px;
+  display: flex;
+  align-items: center;
+  border-right: none;
+  font-size: 12px;
+}
+
+.small-title {
+  font-size: 10px;
+}
+
+tablet-screen {
+  .benefits {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  select {
+    font-size: 2.75rem !important;
+  }
+
+  .upload-area,
+  .download-title,
+  .button-text {
+    display: none;
+  }
+
+  .price-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .go-button {
+    padding: 0px !important;
+    margin-right: 5px;
+
+    .icon {
+      padding: 0px !important;
+    }
+  }
+
+  .speed-title,
+  .icon {
+    border: none !important;
+  }
+
+  .content-area {
+    padding: 5px 0 5px 0 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  select {
+    font-size: 2rem;
+  }
+
+  .benefits {
+    display: none;
+  }
+
+  .icon {
+    padding: 0 5px 0 5px !important;
+  }
+
+  .content-area {
+    border-left: none !important;
+  }
+
+  .index {
+    align-items: flex-start;
+  }
+
+
+
+  .download-title,
+  .upload-title {
+    display: none;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.speed-info {
+  display: flex;
+
+  .icon {
+    border: 2px solid black;
+    padding: 0 20px 0 20px;
+  }
+
+  .speed-title {
+    border: 1px solid black;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    padding: 0 5px 0 5px;
+    border-left: 0px;
+    width: 70px;
+    font-size: 12px;
+  }
+}
+
+.go-button {
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+  transition-duration: 0.4s;
+}
+
+button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.button-icon {
+  display: flex;
+  align-items: center;
+}
+
+.select-container {
+  display: flex;
+  justify-content: flex-end;
+}
